@@ -1,2 +1,2 @@
 
-resized_image = original_image.resize((300, 150), Image.ANTIALIAS)  # Resize to fit in the windowń
+my_label = Label(root, text=f'Width:{screen_width} Height{screen_height}')
