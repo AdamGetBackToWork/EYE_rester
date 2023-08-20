@@ -4,9 +4,12 @@
 
 I needed something to remind me to take care of my eyes, so here is EYE_RESTER!
 
-Feel free to download/use/share/develop further, whatever comes to mind!
+<ul> Feel free to download/use/share/develop further, whatever comes to mind! <ul>
+
+###  
 
 #### HOW TO USE:
-<li> Download folder <li>
-</li> Open folder <li>
-</li> Make a shortcut of eye_rester_scheduler <li>
+<li> Download folder 
+<li> Open folder 
+<li> Make a shortcut of eye_rester_scheduler 
+<li>
