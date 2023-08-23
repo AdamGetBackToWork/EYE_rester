@@ -1,10 +1,13 @@
 # EYE_rester
 
-### Eye rester is a simple python app I've developed. 
+#### Eye rester is a simple python app I've developed. 
 
-I needed something to remind me to take care of my eyes, so here is EYE_RESTER!
+### The idea behind EYE_rester:
+It came into existence as a result of my requirement for a tool that would prompt me to attend to my eye well-being. Hence, I present to you EYE_RESTER!
 
-<ul> Feel free to download/use/share/develop further, whatever comes to mind! <ul>
+The functionality of Eye_Rester is aligned with the 20/20/20 eye guideline: you establish a timer that notifies you to shift your focus every 20 minutes, directing your gaze to an object roughly 20 feet away for a complete duration of 20 seconds. This is precisely what Eye_Rester accomplishes! At intervals of 20 minutes, a small window emerges, lasting for 20 seconds, serving as a reminder to redirect your gaze.
+
+> Feel free to download/use/share/develop further, whatever comes to mind! 
 
 ###  
 
