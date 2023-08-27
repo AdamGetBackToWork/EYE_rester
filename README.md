@@ -14,5 +14,7 @@ The functionality of Eye_Rester is aligned with the 20/20/20 eye guideline: you 
 #### HOW TO USE:
 <li> Download folder 
 <li> Open folder 
-<li> Make a shortcut of eye_rester_scheduler 
-<li>
+<li> Make a shortcut of eye_rester_scheduler.pyw
+<li> Make sure the file extention is .pyw (otherwise it will open terminal every time itll run)
+<li> Add the shortuct to the Startup folder
+<li> Enjoy the app from your next restart ;)
