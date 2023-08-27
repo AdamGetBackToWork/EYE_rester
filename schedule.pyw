@@ -1,7 +1,8 @@
-import schedule
 import eye_rester_app
 import tkinter as tk
 import time
+
+sleep_time = 1 * 20
 
 
 def run_eye_rester():
@@ -13,4 +14,4 @@ def run_eye_rester():
 if __name__ == "__main__":
     while True:
         run_eye_rester()
-        time.sleep(20)
+        time.sleep(sleep_time)

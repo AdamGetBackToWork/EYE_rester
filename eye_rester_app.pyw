@@ -18,19 +18,27 @@ class EyeResterApp:
 
     def load_images(self):
         self.image = PhotoImage(
-            file="C:/Users/adams/Desktop/python/.vscode/Eye_rester/images/option_2-.png"
+            file="C:/Users/adams/Desktop/python/.vscode/Eye_rester/images/option_2--.png"
         )
 
     def create_widgets(self):
+        screen_width = self.root.winfo_screenwidth()
+        screen_height = self.root.winfo_screenheight()
+
         self.image_label = tk.Label(self.root, image=self.image)
-        self.image_label.pack(side=tk.LEFT, anchor=tk.NW, pady=40, padx=40)
+        self.image_label.pack(
+            side=tk.LEFT,
+            anchor=tk.NW,
+            pady=(screen_height / 20),
+            padx=(screen_width / 30),
+        )
 
         self.welcome_label = Label(
             self.root,
             text="It's time to give your eyes a rest!\n\nLook ~20 meters away",
             font="30",
             anchor=CENTER,
-            pady=30,
+            pady=(screen_height / 28),
         )
         self.welcome_label.pack()
 
@@ -40,11 +48,11 @@ class EyeResterApp:
         self.timer_label.pack()
 
     def center_window(self):
-        app_width = 400
-        app_height = 150
-
         screen_width = self.root.winfo_screenwidth()
         screen_height = self.root.winfo_screenheight()
+
+        app_width = int(screen_width / 3.8)
+        app_height = int(screen_height / 6)
 
         x = (screen_width / 2) - (app_width / 2)
         y = (screen_height / 2) - (app_height / 2)

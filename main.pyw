@@ -13,11 +13,12 @@ image = PhotoImage(
 image_label = tk.Label(root, image=image)
 image_label.pack(side=tk.LEFT, anchor=tk.NW, pady="40", padx="40")
 
-app_width = 400
-app_height = 150
 
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
+
+app_width = screen_width / 5
+app_height = screen_height / 5
 
 x = (screen_width / 2) - (app_width / 2)
 y = (screen_height / 2) - (app_height / 2)
