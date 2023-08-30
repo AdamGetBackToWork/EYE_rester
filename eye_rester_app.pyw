@@ -54,7 +54,7 @@ class EyeResterApp:
 
         self.welcome_label = Label(
             self.root,
-            text="It's time to give your eyes a rest!\n\nLook ~10 meters away",
+            text="It's time to give your eyes a rest!\n\nLook ~20 feet away",
             font="30",
             anchor=CENTER,
             pady=(screen_height / 28),
