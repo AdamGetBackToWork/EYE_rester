@@ -3,7 +3,7 @@ import tkinter as tk
 import time
 
 # sleep time is the time program awaits to initialize (in seconds, thats why * 60)
-sleep_time = 20 * 60
+sleep_time = 20
 
 
 # function for calling the app

@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import *
 import time
 import random
+from os.path import dirname
 
 
 class EyeResterApp:
@@ -32,10 +33,14 @@ class EyeResterApp:
         ]
         self.bg_color = random.choice(self.colors)
 
+    def folder_path(self):
+        return dirname(__file__)
+
     def load_images(self):
-        self.image = PhotoImage(
-            file="C:/Users/adams/Desktop/python/.vscode/Eye_rester/images/option_2--.png"
-        )
+        image_path = str(self.folder_path()) + "/images/option_2--.png"
+        image_path = image_path.replace("\\", "/")
+
+        self.image = PhotoImage(file=image_path)
 
     def create_widgets(self):
         self.color_generator()
