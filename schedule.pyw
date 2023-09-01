@@ -22,5 +22,5 @@ def run_eye_rester():
 # condition for the app to run infinitely
 if __name__ == "__main__":
     while True:
-        run_eye_rester()
         time.sleep(sleep_time)
+        run_eye_rester()

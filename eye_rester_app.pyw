@@ -20,16 +20,18 @@ class EyeResterApp:
 
     def color_generator(self):
         self.colors = [
-            "#856ff8",
-            "#46ACC0",
-            "#9CD4FE",
-            "#31F1FE",
-            "#23C06C",
-            "#217947",
-            "#CE6190",
-            "#E6B6BB",
-            "#CEBC61",
-            "#8D4545",
+            # "#856ff8",
+            # "#46ACC0",
+            # "#9CD4FE",
+            # "#78bdf5",
+            # "#348a4d",
+            # "#217947",
+            # "#CE6190",
+            # "#991a20",
+            # "#E6B6BB",
+            # "#CEBC61",
+            "#ffc02e"
+            # "#8D4545",
         ]
         self.bg_color = random.choice(self.colors)
 
@@ -52,17 +54,17 @@ class EyeResterApp:
         self.image_label.pack(
             side=tk.LEFT,
             anchor=tk.NW,
-            pady=(screen_height / 20),
-            padx=(screen_width / 30),
+            pady=40,
+            padx=(60, 10),
         )
         self.image_label.configure(bg=self.bg_color)
 
         self.welcome_label = Label(
             self.root,
             text="It's time to give your eyes a rest!\n\nLook ~20 feet away",
-            font="30",
+            font=("Helvetica", 14),
             anchor=CENTER,
-            pady=(screen_height / 28),
+            pady=30,
         )
         self.welcome_label.configure(bg=self.bg_color)
         self.welcome_label.pack()
@@ -77,8 +79,8 @@ class EyeResterApp:
         screen_width = self.root.winfo_screenwidth()
         screen_height = self.root.winfo_screenheight()
 
-        app_width = int(screen_width / 3.5)
-        app_height = int(screen_height / 6)
+        app_width = 520
+        app_height = 190
 
         x = (screen_width / 2) - (app_width / 2)
         y = (screen_height / 2) - (app_height / 2)
