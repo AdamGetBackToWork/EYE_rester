@@ -55,14 +55,17 @@ class EyeResterApp:
             side=tk.LEFT,
             anchor=tk.NW,
             pady=40,
-            padx=(60, 10),
+            padx=(60, 15),
         )
         self.image_label.configure(bg=self.bg_color)
 
         self.welcome_label = Label(
             self.root,
             text="It's time to give your eyes a rest!\n\nLook ~20 feet away",
-            font=("Helvetica", 14),
+            font=(
+                "Optima",
+                14,
+            ),
             anchor=CENTER,
             pady=30,
         )
@@ -79,8 +82,8 @@ class EyeResterApp:
         screen_width = self.root.winfo_screenwidth()
         screen_height = self.root.winfo_screenheight()
 
-        app_width = 520
-        app_height = 190
+        app_width = 500
+        app_height = 180
 
         x = (screen_width / 2) - (app_width / 2)
         y = (screen_height / 2) - (app_height / 2)
@@ -91,7 +94,9 @@ class EyeResterApp:
     def update_timer(self):
         if self.countdown_seconds > 0:
             self.countdown_seconds -= 1
-            self.timer_label.config(text=f"Time left: {self.countdown_seconds} seconds")
+            self.timer_label.config(
+                text=f"Time left: {self.countdown_seconds} seconds", font=("Optima", 10)
+            )
             self.root.after(1000, self.update_timer)
         else:
             self.timer_label.config(text="Time's up!")
