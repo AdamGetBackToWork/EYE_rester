@@ -20,18 +20,18 @@ class EyeResterApp:
 
     def color_generator(self):
         self.colors = [
-            # "#856ff8",
-            # "#46ACC0",
-            # "#9CD4FE",
-            # "#78bdf5",
-            # "#348a4d",
-            # "#217947",
-            # "#CE6190",
-            # "#991a20",
-            # "#E6B6BB",
-            # "#CEBC61",
-            "#ffc02e"
-            # "#8D4545",
+            "#856ff8",
+            "#46ACC0",
+            "#9CD4FE",
+            "#78bdf5",
+            "#348a4d",
+            "#217947",
+            "#CE6190",
+            "#991a20",
+            "#E6B6BB",
+            "#CEBC61",
+            "#ffc02e",
+            "#8D4545",
         ]
         self.bg_color = random.choice(self.colors)
 
@@ -82,7 +82,7 @@ class EyeResterApp:
         screen_width = self.root.winfo_screenwidth()
         screen_height = self.root.winfo_screenheight()
 
-        app_width = 500
+        app_width = 540
         app_height = 180
 
         x = (screen_width / 2) - (app_width / 2)
