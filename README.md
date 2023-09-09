@@ -8,7 +8,7 @@ It came into existence as a result of my requirement for a tool that would promp
 The functionality of Eye_Rester is aligned with the 20/20/20 eye guideline: you establish a timer that notifies you to shift your focus every 20 minutes, directing your gaze to an object roughly 20 feet away for a complete duration of 20 seconds. This is precisely what Eye_Rester accomplishes! At intervals of 20 minutes, a small window emerges, lasting for 20 seconds, serving as a reminder to redirect your gaze.
 
 <p align="center">
-  <img src="/images/screenshot.png">
+  <img src="/images/Screenshot.png">
 </p>
 
 ###  
