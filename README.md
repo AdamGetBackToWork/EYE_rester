@@ -18,3 +18,5 @@ The functionality of Eye_Rester is aligned with the 20/20/20 eye guideline: you 
 <li> Make sure the file extention is .pyw (otherwise it will open terminal every time it'll run)
 <li> Add the shortuct to the Startup folder in your C drive
 <li> Enjoy the app from your next restart ;)
+
+> I also made a scalable version of the app. File eye_rester_app_scalable - it runs identically in size on every screen! Can use it as default.
