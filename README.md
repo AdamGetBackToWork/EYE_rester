@@ -7,8 +7,6 @@ It came into existence as a result of my requirement for a tool that would promp
 
 The functionality of Eye_Rester is aligned with the 20/20/20 eye guideline: you establish a timer that notifies you to shift your focus every 20 minutes, directing your gaze to an object roughly 20 feet away for a complete duration of 20 seconds. This is precisely what Eye_Rester accomplishes! At intervals of 20 minutes, a small window emerges, lasting for 20 seconds, serving as a reminder to redirect your gaze.
 
-> Feel free to download/use/share/develop further, whatever comes to mind! 
-
 ###  
 
 #### HOW TO USE:
@@ -22,3 +20,11 @@ The functionality of Eye_Rester is aligned with the 20/20/20 eye guideline: you 
 ###
 
 > I also made a scalable version of the app. File eye_rester_app_scalable - it runs identically in size on every screen! Can use it as default.
+
+## Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, please create an issue.
+You can also create a pull request if you have any changes you would like to submit.
+
+## License
+This project is licensed under the MIT License. Feel free to use and modify the code as per your needs.
+
