@@ -28,6 +28,8 @@ The app start in the background as you open up your system and then every 20 min
 
 > I also made a scalable version of the app. File eye_rester_app_scalable - it runs identically in size on every screen! Can use it as default.
 
+### Now working on a new version - executable without python installed on the system :)
+
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please create an issue.
 You can also create a pull request if you have any changes you would like to submit.
