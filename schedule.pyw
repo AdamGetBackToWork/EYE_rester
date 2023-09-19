@@ -1,4 +1,6 @@
 import eye_rester_app
+# or 
+# import eye_rester_app_scalable
 import tkinter as tk
 import time
 
