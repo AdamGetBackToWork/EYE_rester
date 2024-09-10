@@ -3,6 +3,7 @@ from tkinter import *
 import random
 from os.path import dirname
 
+
 # defining the class - the main application class
 class EyeResterApp:
     def __init__(self, root):
@@ -19,7 +20,7 @@ class EyeResterApp:
         # initialize the timer
         self.update_timer()
 
-    # Defining a method, to change background color of the GUI every time it runs 
+    # Defining a method, to change background color of the GUI every time it runs
     def color_generator(self):
         self.colors1 = [
             "#856ff8",
@@ -122,7 +123,8 @@ class EyeResterApp:
         else:
             self.timer_label.config(text="Time's up!")
 
-# run 
+
+# run
 if __name__ == "__main__":
     root = tk.Tk()
     app = EyeResterApp(root)
