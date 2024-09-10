@@ -37,6 +37,8 @@ class EyeResterApp:
             "#404ca1",
             "#6e056f",
         ]
+
+    def configuration_setting(self):
         self.bg_color = random.choice(
             self.colors1 if random.randrange(0, 2) == 1 else self.colors2
         )
@@ -53,6 +55,7 @@ class EyeResterApp:
 
     def create_widgets(self):
         self.color_generator()
+        self.configuration_setting()
 
         screen_width = self.root.winfo_screenwidth()
         screen_height = self.root.winfo_screenheight()
