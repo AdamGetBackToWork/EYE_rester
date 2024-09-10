@@ -37,13 +37,10 @@ class EyeResterApp:
             "#404ca1",
             "#6e056f",
         ]
-        color_set = random.randrange(0, 2, 1)
-        if color_set == 1:
-            self.bg_color = random.choice(self.colors1)
-            self.txt_color = "#000000"
-        else:
-            self.bg_color = random.choice(self.colors2)
-            self.txt_color = "#f8f6e8"
+        self.bg_color = random.choice(
+            self.colors1 if random.randrange(0, 2) == 1 else self.colors2
+        )
+        self.txt_color = "#000000" if self.bg_color in self.colors1 else "#f8f6e8"
 
     def folder_path(self):
         return dirname(__file__)
