@@ -5,6 +5,7 @@ import random
 from os.path import dirname
 
 
+# defining the class - the main application class
 class EyeResterApp:
     def __init__(self, root):
         self.root = root
@@ -12,12 +13,15 @@ class EyeResterApp:
 
         self.countdown_seconds = 20
 
+        # calling methods to load image, create GUI and center the app
         self.load_images()
         self.create_widgets()
         self.center_window()
 
+        # initialize the timer
         self.update_timer()
 
+    # Defining a method, to change background color of the GUI every time it runs 
     def color_generator(self):
         self.colors = [
             "#856ff8",
@@ -34,16 +38,20 @@ class EyeResterApp:
             "#8D4545",
         ]
         self.bg_color = random.choice(self.colors)
-
+        
+    # method to then trace the location of the images
     def folder_path(self):
         return dirname(__file__)
 
+    # finding the images and calling them
     def load_images(self):
         image_path = str(self.folder_path()) + "/images/option_2--.png"
         image_path = image_path.replace("\\", "/")
 
         self.image = PhotoImage(file=image_path)
 
+    # Defining a method to create GUI widgets, but this time making them scalable!
+    # the rest is just basic tkinter syntax
     def create_widgets(self):
         self.color_generator()
 
@@ -81,6 +89,7 @@ class EyeResterApp:
         self.timer_label.configure(bg=self.bg_color)
         self.timer_label.pack()
 
+    # definign a method to center the window on every screen
     def center_window(self):
         screen_width = self.root.winfo_screenwidth()
         screen_height = self.root.winfo_screenheight()
@@ -93,7 +102,8 @@ class EyeResterApp:
 
         self.root.geometry(f"{app_width}x{app_height}+{int(x)}+{int(y)}")
         self.root.configure(bg=self.bg_color)
-
+    
+    # method for a timer
     def update_timer(self):
         screen_height = self.root.winfo_screenheight()
         font_size_timer = int(screen_height * 0.17 / 18)
@@ -108,7 +118,7 @@ class EyeResterApp:
         else:
             self.timer_label.config(text="Time's up!")
 
-
+# run
 if __name__ == "__main__":
     root = tk.Tk()
     app = EyeResterApp(root)
