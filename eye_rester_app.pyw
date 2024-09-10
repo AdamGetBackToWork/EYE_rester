@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import *
-import time
 import random
 from os.path import dirname
 
@@ -19,21 +18,32 @@ class EyeResterApp:
         self.update_timer()
 
     def color_generator(self):
-        self.colors = [
+        self.colors1 = [
             "#856ff8",
             "#46ACC0",
             "#9CD4FE",
             "#78bdf5",
             "#348a4d",
-            "#217947",
             "#CE6190",
-            "#991a20",
             "#E6B6BB",
             "#CEBC61",
             "#ffc02e",
-            "#8D4545",
         ]
-        self.bg_color = random.choice(self.colors)
+        self.colors2 = [
+            "#217947",
+            "#496757",
+            "#991a20",
+            "#8D4545",
+            "#404ca1",
+            "#6e056f",
+        ]
+        color_set = random.randrange(0, 2, 1)
+        if color_set == 1:
+            self.bg_color = random.choice(self.colors1)
+            self.txt_color = "#000000"
+        else:
+            self.bg_color = random.choice(self.colors2)
+            self.txt_color = "#f8f6e8"
 
     def folder_path(self):
         return dirname(__file__)
@@ -63,10 +73,11 @@ class EyeResterApp:
             self.root,
             text="It's time to give your eyes a rest!\n\nLook ~20 feet away",
             font=(
-                "Optima",
+                "CIN",
                 14,
             ),
             anchor=CENTER,
+            fg=self.txt_color,
             pady=30,
         )
         self.welcome_label.configure(bg=self.bg_color)
@@ -95,7 +106,9 @@ class EyeResterApp:
         if self.countdown_seconds > 0:
             self.countdown_seconds -= 1
             self.timer_label.config(
-                text=f"Time left: {self.countdown_seconds} seconds", font=("Optima", 10)
+                text=f"Time left: {self.countdown_seconds} seconds",
+                font=("Optima", 10),
+                fg=self.txt_color,
             )
             self.root.after(1000, self.update_timer)
         else:
@@ -106,5 +119,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = EyeResterApp(root)
     root.mainloop()
-
-    # test 123
